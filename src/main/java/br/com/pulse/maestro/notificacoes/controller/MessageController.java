@@ -10,7 +10,7 @@ public class MessageController {
 	
 	
 	
-	@MessageMapping("/news")
+	@MessageMapping("/message")
 	@SendTo("/topic/news")
 	public String  broadcastNews(@Payload String message) {
 	  return message;
